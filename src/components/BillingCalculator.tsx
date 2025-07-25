@@ -41,6 +41,8 @@ interface BillingData {
   total_bill_amount: number;
 }
 
+export type { BillingData };
+
 interface BillingCalculatorProps {
   selectedClient: Client | null;
   onBillGenerated: (billData: BillingData) => void;
